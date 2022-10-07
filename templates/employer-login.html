@@ -1,0 +1,68 @@
+{% extends "base1.html" %} 
+{% block content %}
+	
+<section class="loginForm employer-login">
+    <div class="container-fluid">
+		<div class="login-inner">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="login-sec">
+						<div class="text-center">
+							<h3 class="text-center">WELCOME BACK</h3>
+							<h4 class="text-red">Please Login to Your Company Account</h4>
+						</div>
+						<form method="post">
+							<div class="latestForm">
+								<!-- user input -->
+								<div class="form-group"> 
+									<input type="text" name="username" id="userName" class="form-control" placeholder="Username" value="" required> 
+									<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+								</div>
+								<!-- password input -->
+								<div class="form-group mb-0"> 
+									<input type="password" name="password" id="password" class="form-control" placeholder="Password" value="" required> 
+									<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+								</div> 
+							</div> 
+							<!-- /. latestForm -->
+							<!-- 2 column grid layout for inline styling -->
+							<div class="row justlogin">
+								<div class="col d-flex justify-content-left">
+									<!-- Checkbox -->
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="savepassword" class="custom-control-input" id="savePwd" checked required>
+										<label class="custom-control-label" for="savePwd">Save Password</label>
+									</div>
+								</div>
+
+								<div class="col text-right">
+								  <!-- Simple link -->
+								  <a class="forgotPwd" href="forgot-password.html">Forgot password?</a>
+								</div>
+							</div>
+
+							<!-- Submit button -->
+							<input type="submit" name="submit" class="btn btn-danger btn-block" id="login" value="Login">
+
+							<!-- Register buttons -->
+							<div class="text-center">
+								<p>Don't have Account? <a class="clickHere" href="register.html">RegisterYour Company Here</a></p>
+							</div>
+						</form>	
+					</div>
+				</div>
+				<div class="col-md-5 banner-sec">
+					<img class="d-block img-fluid w-100 h-100" src="images/team-meeting.png" alt="Banner">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+{% endblock %}

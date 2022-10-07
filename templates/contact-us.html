@@ -1,0 +1,121 @@
+{% extends "base1.html" %} 
+{% block content %}
+{%for i in cont%}
+<section class="nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-5 nearcol">
+				<h1>{{i.heading_title1}}</h1>
+				<h2 class="text-red">{{i.heading_title1}}</h2>
+			</div>
+			<div class="col-sm-7 d-none d-md-block">
+				<div class="row">
+					<div class="d-flex w-100">
+						<img class="w-100" src="images/contact-us/banner.png" alt="Banner" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+<section class="contacts">
+	<div class="container">
+		<div class="row">	
+			<div class="col-sm-4 mb-4">
+				<a href="#">
+					<div class="contInner">
+						<i class="fa fa-map" aria-hidden="true"></i>
+						<h4>Address</h4>
+						<p>228-5 Main Street, Georgia.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-4 mb-4">
+				<a href="#">
+					<div class="contInner">
+						<i class="fa fa-envelope-open" aria-hidden="true"></i>
+						<h4>E-mail</h4>
+						<p>contact.jp@gmail.com</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-4 mb-4">
+				<a href="#">
+					<div class="contInner">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<h4>Phone Number</h4>
+						<p class="f_rubik">+61589-35968</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. contacts -->
+
+<section class="contactForm">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Have A Question ?</p> 
+				<h3>{{i.mid_title1}}<span class="text-red">{{i.mid_title2}}</span></h3>
+				
+				<form class="form" method="post">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input type="text" name="username" id="username" class="form-control" placeholder="User Name" value="" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" value="" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" value="" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<input type="text" name="write" class="form-control" placeholder="Write your Message" value="" required />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" name="accept" class="custom-control-input" id="accept" required>
+								<label class="custom-control-label" for="accept">Accept Term & privacy Policy</label>
+							</div>
+							  
+							<input type="submit" name="submit" id="sendMsg" class="btn btn-danger rounded-pill" value="Send Message" />
+						</div>
+					</div>	
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. contactForm -->
+
+<div class="contactMap">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d717777.9481649355!2d-85.3557869889404!3d33.3103748058766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s228-5%20Main%20Street%2C%20Georgia.!5e0!3m2!1sen!2sin!4v1612943904611!5m2!1sen!2sin" height="385" style="border:0; width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<!-- intro -->
+<div class="intro">
+	<div class="way-success"></div>
+	<div class="caption">
+		<div class="way-inner">
+			<h3>WAY TO SUCCESS</h3>
+		</div>
+	</div>
+	<span class="overlay">
+		<svg viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
+		<path fill="#282b4a" d="M 250 180.5 c -53.85 0 -135.344 -30.044 -250 -165.633 V 262 h 500 V 15.867 C 405.344 180.456 280.85 180.5 250 180.5 Z"/>
+		</svg>
+	</span>
+</div>
+
+{%endfor%}
+{% endblock %}

@@ -1,0 +1,204 @@
+{% extends "base1.html" %} 
+{% block content %}
+{%load static%}
+
+<section class="nearJoblist nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			{%for i in Blog%}
+			<div class="col-sm-12 nearcol">
+				<h1>{{i.heading_title1}}</h1>
+				<h2 class="text-red">{{i.heading_title2}}</h2>
+				<img class="girl" src="images/job-listing/girl-img.png" alt="Banner" /> 
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+<section class="blogs">
+	<div class="container text-center blog-head">
+		<h3>{{i.mid_title}}</h3>
+		<h3 class="col-sm-8 mx-auto l-blog">{{i.mid_description}}	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8 latestBlog">
+				<div class="row">
+					<div class="col-sm-6 pr-4">
+						<div class="card mb-6">
+							<img class="card-img-top" src="images/home/blog-3.png" alt="Job">
+							<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+							<div class="card-body">
+								<h3 class="card-title">Most Important</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+								<a class="readlink" href="blog-detail.html">Read More</a>
+								<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 pl-4">
+						<div class="card mb-6">
+							<img class="card-img-top" src="images/home/blog-1.png" alt="Job">
+							<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+							<div class="card-body">
+								<h3 class="card-title">New days Insipiration</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+								<a class="readlink" href="blog-detail.html">Read More</a>
+								<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-6 pr-4">
+						<div class="card mb-6">
+							<img class="card-img-top" src="images/home/blog-2.png" alt="Job">
+							<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+							<div class="card-body">
+								<h3 class="card-title">New Genration</h3>
+								<p>{{i.blog1descript|safe}}</p>
+								<a class="readlink" href="blog-detail.html">Read More</a>
+								<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 pl-4">
+						<div class="card mb-6">
+							<img class="card-img-top" src="images/home/blog-3.png" alt="Job">
+							<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+							<div class="card-body">
+								<h3 class="card-title">New Ecnomics</h3>
+								<p>{{i.blog2descript|safe}}</p>
+								<a class="readlink" href="blog-detail.html">Read More</a>
+								<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-6 pr-4">
+						<div class="card mb-6">
+							<img class="card-img-top" src="images/home/blog-1.png" alt="Job">
+							<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+							<div class="card-body">
+								<h3 class="card-title">My Way to Right Job</h3>
+								<p>{{i.blog3descript|safe}}</p>
+								<a class="readlink" href="blog-detail.html">Read More</a>
+								<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 pl-4">
+						<div class="card mb-6">
+							<img class="card-img-top" src="images/home/blog-2.png" alt="Job">
+							<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+							<div class="card-body">
+								<h3 class="card-title">Most Important</h3>
+								<p>{{i.blog4descript|safe}}</p>
+								<a class="readlink" href="blog-detail.html">Read More</a>
+								<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="pull-left">
+							<ul class="pagination f_rubik mb-0">
+								<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!-- grid column -->
+			<div class="col-sm-4 blog-right">
+				<div class="latestForm srchBar">
+					<h4 class="mt-0">Search</h4>
+					<form method="post">
+						<div class="form-group"> 
+							<input type="search" name="search" id="search" class="form-control" value="" required=""> 
+							<label class="form-control-placeholder" for="search">
+								<i class="fa fa-search iconSet" aria-hidden="true"></i> 
+								Search
+							</label>
+						</div>
+					</form>
+				</div>
+				
+				<div class="categories-list">
+					<h4>Categories</h4>
+					<p><a href="#">Lates Jobs Managment</a></p>
+					<p><a href="#">Lates Interview Tips</a></p>
+					<p><a href="#">Employes Rights</a></p>
+				</div>
+				
+				<h4>Latest News</h4>
+				<a href="#">
+				<div class="media">
+					<img src="images/about-us/member3.png" alt="Team" class="teamimage w-100">
+					<div class="media-body">
+						<ul class="list-unstyled">
+							<li class="list-item">18 April 2021</li>
+							<li class="list-item">Lates Jobs Managment <br> fair, New Yor USA</li>
+						</ul>
+					</div>
+				</div>
+				</a>
+				
+				<a href="#">
+				<div class="media">
+					<img src="images/about-us/member5.png" alt="Team" class="teamimage w-100">
+					<div class="media-body">
+						<ul class="list-unstyled">
+							<li class="list-item">18 April 2021</li>
+							<li class="list-item">Lates Jobs Managment <br> fair, New Yor USA</li>
+						</ul>
+					</div>
+				</div>
+				</a>
+				
+				<a href="#">
+				<div class="media">
+					<img src="images/about-us/member4.png" alt="Team" class="teamimage w-100">
+					<div class="media-body">
+						<ul class="list-unstyled">
+							<li class="list-item">18 April 2021</li>
+							<li class="list-item">Lates Jobs Managment <br> fair, New Yor USA</li>
+						</ul>
+					</div>
+				</div>
+				</a>
+		
+				<div class="row rightcandi">
+					<div class="col-sm-12">
+						<div class="jobImage">
+							<div class="image-card">
+								<img class="w-100" src="images/company-listing/add-banner.png" alt="Banner">
+							</div>
+						</div>
+						<div class="banner-text">
+							<h2 class="text-secondary"> RIGHT <br>
+							<span class="text-red">PEOPLE</span> <br> RIGHT <br>
+							<span class="text-red">SLOUTIONS</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			{%endfor%}
+		</div>
+	</div>
+</section>
+<!-- blogs -->
+
+{% endblock %}

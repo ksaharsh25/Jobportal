@@ -1,0 +1,268 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+
+<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 11:28:43 GMT -->
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+	<!-- Bootstrap 4 link -->
+	<link rel="stylesheet" href="{% static 'assets/bootstrap/bootstrap.min.css' %}">
+	<!-- Font-family -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap" rel="stylesheet">
+	<!-- Font-awesome link -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/font-awesome/css/font-awesome.min.css' %}">
+</head>
+<body>
+<!-- banner start here -->
+<div class="banner">
+<!-- header start here -->
+<header id="header">
+<!-- navbar start here -->
+<nav class="navbar navbar-expand-lg navbar-light">
+	
+	<div class="container-fluid" method="GET">
+		<!-- navbar-brand -->{%for i in data%}
+		<a class="navbar-brand" href="home.html">
+			<img src="/static/images/logo/{{i.company_logo}}" class="w-100 main-logo" alt="Logo" title="Logo" />
+		</a>
+		{%endfor%}
+		<!-- toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- navbar links -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav navbar-center ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="home.html">Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="categories.html">Employee</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about-us.html">Candidate</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about-us.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about-us.html">Contact</a>
+				</li>
+				<!-- <li class="nav-item drop-down">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Pages</a> -->
+					<!-- Mega-menu -->
+					<!-- <div class="mega-menu fadeIn animated dropdown-menu">
+						<div class="row">
+							<div class="col-sm-3 border-right">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="company-register.html">Company Register</a></li>
+									<li><a class="dropdown-item" href="employer-login.html">Employer Login</a></li>
+									<li><a class="dropdown-item" href="company-listing.html">Company Listing</a></li>
+									<li><a class="dropdown-item" href="company-details.html">Company Details</a></li>
+									<li><a class="dropdown-item" href="post-job.html">Post Job</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 border-right">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="job-listing.html">Job Listing</a></li>
+									<li><a class="dropdown-item" href="job-details.html">Job Details</a></li>
+									<li><a class="dropdown-item" href="candidate-listing.html">Candidate Listing</a></li>
+									<li><a class="dropdown-item" href="candidate-details.html">Candidate Details</a></li>
+									<li><a class="dropdown-item" href="profile.html">Profile</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 border-right">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+									<li><a class="dropdown-item" href="register.html">Register</a></li>
+									<li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
+									<li><a class="dropdown-item" href="login.html">Login</a></li>
+									<li><a class="dropdown-item" href="faq.html">Faq</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="blog.html">Blog </a></li>
+									<li><a class="dropdown-item" href="blog-detail.html">Blog Detail </a></li>
+									<li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+									<li><a class="dropdown-item" href="not-found.html">Not Found</a></li>
+									<li><a class="dropdown-item" href="term-conditions.html">Term Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div> /. mega-menu 
+				</li> -->
+				
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="contact-us.html">Contact</a>
+				</li> -->
+			</ul>
+			<!-- navbar right button -->
+			<ul class="navbar-nav navbar-right">
+				<li><a class="btn btn-link mr-sm-2" href="profile.html">
+					<i class="fa fa-upload mr-2" aria-hidden="true"></i> Upload Resume
+				</a></li>
+				<li><a class="btn btn-danger my-2 my-sm-0" href="register.html">Sign Up</a></li>
+			</ul><!-- navbar right button end here -->
+		</div><!-- navbar links -->
+	</div>
+	
+</nav><!-- navbar -->
+</header>
+<!-- header -->
+{% block content%}
+
+
+
+{% endblock %}
+
+
+<!-- footer start here -->
+<footer id="footer">
+	<!--<svg viewBox="0 0 1440 250">
+	  <path fill="#fff" fill-opacity="1" d="M0,96L120,122.7C240,149,480,203,720,202.7C960,203,1200,149,1320,122.7L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+	</svg>-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="home.html">
+					<img src="static/images/home/jobLogo-footer.png" alt="Logo" title="Logo">
+				</a>
+				<div class="footer_inner">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut <br> labore et dolore accumsan lacus <br> vel facilisis.
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-2 mx-auto">
+				<h5>Usefull Links</h5>
+				<div class="footer_inner">
+					<ul class="list-unstyled">
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">News & Blog </a></li>
+						<li><a href="#">Our features</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Contact Us</h5>
+				<div class="footer_inner">
+					<div class="media">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<div class="media-body"><p> <span class="f_rubik">456,</span> tredy Road, New york <br> USA, MD <span class="f_rubik">210093</span> </p></div>
+					</div>
+					<div class="media">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i> 
+						<div class="media-body"><p>hr@gmail.com</p></div>
+					</div>
+					<div class="media">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<div class="media-body"><p class="f_rubik">+61-5869259325</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Get In Touch</h5>
+				<div class="footer_inner">
+					<form class="form-inline valid" method="post">
+						<div class="input-group mb-4">
+							<input type="email" name="email" class="form-control" id="email" placeholder="E-mail Address" value="" required>
+							<div class="input-group-append">
+								<button class="btn btn-white" name="submit" type="submit" id="submit">
+									<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer end here -->
+
+<!-- Js Links -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+<!-- More function here -->
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 501;  // How many characters are shown by default
+    var ellipsestext = "....";
+    var moretext = "More";
+    var lesstext = "More less";
+    
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().slideToggle();
+        $(this).prev().slideToggle();
+        return false;
+    });
+});
+</script>
+
+<!-- Popover function here -->
+<script>
+$(document).ready(function(){
+	$('[data-toggle="popover"]').popover({
+		trigger: 'hover',
+		html: true,
+    }) 
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8CM7T1B0K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B8CM7T1B0K');
+</script>
+</body>
+
+<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Sep 2022 11:29:02 GMT -->
+</html>
+

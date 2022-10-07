@@ -1,0 +1,525 @@
+{% extends "base1.html" %} 
+{% block content %}
+
+<section class="nearJoblist nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 nearcol">
+				<h1>Your dream Job</h1>
+				<h2 class="text-red">Is Near to You</h2>
+				<img class="girl" src="images/job-listing/girl-img.png" alt="Banner" /> 
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+<section class="jobListing">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Job <span class="text-red">Listing</span></h3>
+				<div class="row">
+					<div class="col-sm-3">
+						<button type="button" name="upload" id="upload" class="btn btn-danger btn-block">
+							<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i> Upload Your Resume
+						</button>
+						
+						<div class="joblist_Left">
+							<div class="card">
+								<div class="card-body">
+									<h4>Job By Tittle</h4>
+									<form method="post">
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="webdesigner" class="custom-control-input" id="jobTittle1" checked="">
+												<label class="custom-control-label" for="jobTittle1">Web Designer</label>
+												<span class="f_rubik pull-right">12</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="grahic" class="custom-control-input" id="jobTittle2">
+												<label class="custom-control-label" for="jobTittle2">Graphic Designer</label>
+												<span class="f_rubik pull-right">17</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="carmachanic" class="custom-control-input" id="jobTittle3">
+												<label class="custom-control-label" for="jobTittle3">Car Mechanic</label>
+												<span class="f_rubik pull-right">15</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="grahic" class="custom-control-input" id="jobTittle4">
+												<label class="custom-control-label" for="jobTittle4">Graphic Designer</label>
+												<span class="f_rubik pull-right">17</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="account" class="custom-control-input" id="jobTittle5">
+												<label class="custom-control-label" for="jobTittle5">Account Manager</label>
+												<span class="f_rubik pull-right">20</span>
+											</div>
+										</div>
+										<a href="#">View More</a>
+									</form>
+								</div>
+							</div><!-- /. card -->
+							
+							<div class="card">
+								<div class="card-body">
+									<h4>Job By City</h4>
+									<form method="post">
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="newyork" class="custom-control-input" id="jobcity1" checked="">
+												<label class="custom-control-label" for="jobcity1">New York</label>
+												<span class="f_rubik pull-right">19</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="losangeles" class="custom-control-input" id="jobcity2" checked="">
+												<label class="custom-control-label" for="jobcity2">Los Angeles</label>
+												<span class="f_rubik pull-right">22</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="shiscago" class="custom-control-input" id="jobcity3">
+												<label class="custom-control-label" for="jobcity3">Shicago</label>
+												<span class="f_rubik pull-right">14</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="losangeles" class="custom-control-input" id="jobcity4">
+												<label class="custom-control-label" for="jobcity4">Las Vegas</label>
+												<span class="f_rubik pull-right">23</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="losangeles" class="custom-control-input" id="jobcity5">
+												<label class="custom-control-label" for="jobcity5">United Kingdom</label>
+												<span class="f_rubik pull-right">18</span>
+											</div>
+										</div>
+										<a href="#">View More</a>
+									</form>
+								</div>
+							</div><!-- /. card -->
+							
+							<div class="card">
+								<div class="card-body">
+									<h4>Job By Experience</h4>
+									<form method="post">
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="fulltime" class="custom-control-input" id="jobEx1" checked="">
+												<label class="custom-control-label" for="jobEx2">Full Time</label>
+												<span class="f_rubik pull-right">19</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="contact" class="custom-control-input" id="jobEx2">
+												<label class="custom-control-label" for="jobEx2">Conatct</label>
+												<span class="f_rubik pull-right">04</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="parttime" class="custom-control-input" id="jobEx3">
+												<label class="custom-control-label" for="jobEx3">Part Time</label>
+												<span class="f_rubik pull-right">03</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="internship" class="custom-control-input" id="jobEx4">
+												<label class="custom-control-label" for="jobEx4">Internship</label>
+												<span class="f_rubik pull-right">01</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="internship" class="custom-control-input" id="jobEx5">
+												<label class="custom-control-label" for="jobEx5">Freelence</label>
+												<span class="f_rubik pull-right">06</span>
+											</div>
+										</div>
+										<a href="#">View More</a>
+									</form>
+								</div>
+							</div><!-- /. card -->
+							
+							<div class="card">
+								<div class="card-body">
+									<h4>Job By Industry</h4>
+									<form method="post">
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="info" class="custom-control-input" id="jobIndustry1" checked="">
+												<label class="custom-control-label" for="jobIndustry1">Information Teach.</label>
+												<span class="f_rubik pull-right">19</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="adv" class="custom-control-input" id="jobIndustry2">
+												<label class="custom-control-label" for="jobIndustry2">Advertising/PR</label>
+												<span class="f_rubik pull-right">04</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="health" class="custom-control-input" id="jobIndustry3">
+												<label class="custom-control-label" for="jobIndustry3">Health & Fitness</label>
+												<span class="f_rubik pull-right">03</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="media" class="custom-control-input" id="jobIndustry4">
+												<label class="custom-control-label" for="jobIndustry4">Media $ communication</label>
+												<span class="f_rubik pull-right">01</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="service" class="custom-control-input" id="jobIndustry5">
+												<label class="custom-control-label" for="jobIndustry5">Services</label>
+												<span class="f_rubik pull-right">06</span>
+											</div>
+										</div>
+										<a href="#">View More</a>
+									</form>
+								</div>
+							</div><!-- /. card -->
+							
+							<div class="card">
+								<div class="card-body">
+									<h4>Top Companies</h4>
+									<form method="post">
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="goggle" class="custom-control-input" id="topCom1" checked="">
+												<label class="custom-control-label" for="topCom1">Goggle</label>
+												<span class="f_rubik pull-right">19</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="microdoft" class="custom-control-input" id="topCom2">
+												<label class="custom-control-label" for="topCom2">MicroSoft</label>
+												<span class="f_rubik pull-right">04</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="peopsico" class="custom-control-input" id="topCom3">
+												<label class="custom-control-label" for="topCom3">Peopsico</label>
+												<span class="f_rubik pull-right">03</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="dell" class="custom-control-input" id="topCom4">
+												<label class="custom-control-label" for="topCom4">Dell</label>
+												<span class="f_rubik pull-right">01</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="hcl" class="custom-control-input" id="topCom5">
+												<label class="custom-control-label" for="topCom5">HCL</label>
+												<span class="f_rubik pull-right">06</span>
+											</div>
+										</div>
+										<a href="#">View More</a>
+									</form>
+								</div>
+							</div><!-- /. card -->
+							
+							<div class="card">
+								<div class="card-body">
+									<h4>Top Companies</h4>
+									<form method="post">
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="numone" class="custom-control-input" id="topComnum1" checked="">
+												<label class="custom-control-label f_rubik" for="topComnum1">0 to $100</label>
+												<span class="f_rubik pull-right">19</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="numtwo" class="custom-control-input" id="topComnum2">
+												<label class="custom-control-label f_rubik" for="topComnum2">$ 101 to $ 150</label>
+												<span class="f_rubik pull-right">04</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="numthree" class="custom-control-input" id="topComnum3">
+												<label class="custom-control-label f_rubik" for="topComnum3">$ 151 to $ 200</label>
+												<span class="f_rubik pull-right">03</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="numfour" class="custom-control-input" id="topComnum4">
+												<label class="custom-control-label f_rubik" for="topComnum4">$ 201 to $ 250</label>
+												<span class="f_rubik pull-right">01</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" name="numfive" class="custom-control-input" id="topComnum5">
+												<label class="custom-control-label f_rubik" for="topComnum5">$ 251 to $ 300</label>
+												<span class="f_rubik pull-right">06</span>
+											</div>
+										</div>
+										<a href="#">View More</a>
+									</form>
+								</div>
+							</div><!-- /. card -->
+						</div><!-- /. joblist_Left -->
+					</div><!-- /. grid column -->
+					<div class="col-sm-9">
+						<form class="form-row" method="post">
+							<div class="form-group col-sm-4 dropdown-container">
+								<select name="field" id="field" class="form-control">
+									<option value="field">Field</option>
+									<option value="webdesigner">Web Desginer</option>
+									<option value="webdeveloper">Web Develpoer</option>
+									<option value="graphicdesginer">Graphic Desginer</option>
+									<option value="accountmanager">Account Manager</option>
+									<option value="carmechanic">Car Mechanic</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-2 dropdown-container">
+								<select name="year" id="year" class="form-control">
+									<option value="year">Year</option>
+									<option value="1year">1 Year</option>
+									<option value="2year">2 Year</option>
+									<option value="4year">4 Year</option>
+									<option value="7year">7 Year</option>
+									<option value="10year">10 Year</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-4 dropdown-container">
+								<select name="location" id="location" class="form-control">
+									<option value="location">Loaction</option>
+									<option value="newyork">New York</option>
+									<option value="losangeles">Los Angeles</option>
+									<option value="shicago">Shicago</option>
+									<option value="uniteskingdom">United Kingdom</option>
+								</select>
+							</div>
+							<div class="col-sm-2">
+								<input type="submit" name="serchbtn" id="searchBtn" class="btn btn-dark btn-block" value="Search">
+							</div>
+						</form>
+						
+						<div class="joblist_Right">
+							<div class="row pb-5">
+								<div class="col-sm-6">
+									<div class="card">
+										<div class="listIcon">
+											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										</div>
+										<img class="card-img-top mx-auto" src="images/job-listing/company-logo-1.png" alt="Logo" />
+										<div class="card-body">
+											<h4>Job:- Web developer</h4>
+											<p class="peraOn">ABC Production</p>
+											<p>Lorem ipsum dolor tsit amet, consectetur adipiscing elit, sed to eiusmod laliqua.</p>
+											<ul class="list-inline mb-0">
+												<li class="list-inline-item pt-2 pull-left">
+													<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+													New York
+												</li>
+												<li class="list-inline-item pull-right">
+													<a href="job-details.html" class="btn btn-outline-dark rounded-0">
+														Apply Now
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="card ml-auto">
+										<div class="listIcon">
+											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										</div>
+										<img class="card-img-top mx-auto" src="images/job-listing/company-logo-2.png" alt="Logo" />
+										<div class="card-body">
+											<h4>Job:- Web developer</h4>
+											<p class="peraOn">ABC Production</p>
+											<p>Lorem ipsum dolor tsit amet, consectetur adipiscing elit, sed to eiusmod laliqua.</p>
+											<ul class="list-inline mb-0">
+												<li class="list-inline-item pt-2 pull-left">
+													<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+													New York
+												</li>
+												<li class="list-inline-item pull-right">
+													<a href="job-details.html" class="btn btn-outline-dark rounded-0">
+														Apply Now
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div><!-- /. row -->
+							<div class="row pt-4 pb-5">
+								<div class="col-sm-6">
+									<div class="card">
+										<div class="listIcon">
+											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										</div>
+										<img class="card-img-top mx-auto" src="images/job-listing/company-logo-3.png" alt="Logo" />
+										<div class="card-body">
+											<h4>Job:- Web developer</h4>
+											<p class="peraOn">ABC Production</p>
+											<p>Lorem ipsum dolor tsit amet, consectetur adipiscing elit, sed to eiusmod laliqua.</p>
+											<ul class="list-inline mb-0">
+												<li class="list-inline-item pt-2 pull-left">
+													<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+													New York
+												</li>
+												<li class="list-inline-item pull-right">
+													<a href="job-details.html" class="btn btn-outline-dark rounded-0">
+														Apply Now
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="card ml-auto">
+										<div class="listIcon">
+											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										</div>
+										<img class="card-img-top mx-auto" src="images/job-listing/company-logo-4.png" alt="Logo" />
+										<div class="card-body">
+											<h4>Job:- Web developer</h4>
+											<p class="peraOn">ABC Production</p>
+											<p>Lorem ipsum dolor tsit amet, consectetur adipiscing elit, sed to eiusmod laliqua.</p>
+											<ul class="list-inline mb-0">
+												<li class="list-inline-item pt-2 pull-left">
+													<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+													New York
+												</li>
+												<li class="list-inline-item pull-right">
+													<a href="job-details.html" class="btn btn-outline-dark rounded-0">
+														Apply Now
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div><!-- /. row -->
+							<div class="row pt-4 pb-5">
+								<div class="col-sm-6">
+									<div class="card">
+										<div class="listIcon">
+											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										</div>
+										<img class="card-img-top mx-auto" src="images/job-listing/company-logo-5.png" alt="Logo" />
+										<div class="card-body">
+											<h4>Job:- Web developer</h4>
+											<p class="peraOn">ABC Production</p>
+											<p>Lorem ipsum dolor tsit amet, consectetur adipiscing elit, sed to eiusmod laliqua.</p>
+											<ul class="list-inline mb-0">
+												<li class="list-inline-item pt-2 pull-left">
+													<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+													New York
+												</li>
+												<li class="list-inline-item pull-right">
+													<a href="job-details.html" class="btn btn-outline-dark rounded-0">
+														Apply Now
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="card ml-auto">
+										<div class="listIcon">
+											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										</div>
+										<img class="card-img-top mx-auto" src="images/job-listing/company-logo-6.png" alt="Logo" />
+										<div class="card-body">
+											<h4>Job:- Web developer</h4>
+											<p class="peraOn">ABC Production</p>
+											<p>Lorem ipsum dolor tsit amet, consectetur adipiscing elit, sed to eiusmod laliqua.</p>
+											<ul class="list-inline mb-0">
+												<li class="list-inline-item pt-2 pull-left">
+													<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+													New York
+												</li>
+												<li class="list-inline-item pull-right">
+													<a href="job-details.html" class="btn btn-outline-dark rounded-0">
+														Apply Now
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div><!-- /. row -->
+							<div class="row py-4">
+								<div class="col-sm-12">
+									<nav class="pull-left">
+										<ul class="pagination f_rubik">
+											<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</nav>
+									<p class="showing">Showing 6 out of 30</p>
+								</div>
+							</div><!-- /. row -->
+							<div class="row py-5 interView">
+								<div class="col-sm-4">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="w-100" src="images/job-listing/interview-banner.png" alt="Job">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-8">
+									<h1>Tips For <span class="text-red">Interview</span></h1>
+									<p>Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labaore et dolore magna aliqua. Quis ipusm suspendisse. ultrices gravida, Risus commdo. sit  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labaore et dolore magna aliqua. Quis ipusm suspendisse.
+									<a class="readmorelink" href="#"> Read More</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

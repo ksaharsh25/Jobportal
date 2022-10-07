@@ -1,0 +1,118 @@
+{% extends "base1.html" %} 
+{% block content %}
+
+<section class="profile_banner">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 nearJob">
+				<h1>Your dream Job</h1>
+				<h2 class="text-red">Is Near to You</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. profile_banner -->
+
+<section class="profileMain com-register">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 pr-lg-5">
+				<div class="card mb-2 border-0">
+					<div class="jobImage">
+						<div class="image-card">
+							<img class="card-img-top" src="images/company-register.png" alt="Profile">
+						</div>
+					</div>
+				</div>
+				
+				<div class="proLinks">
+					<a href="#" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-cloud mr-2" aria-hidden="true"></i> General Information
+					</a> 
+					<a href="#" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-user-o mr-2" aria-hidden="true"></i> Company Address
+					</a>
+					<a href="#" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-key mr-2" aria-hidden="true"></i> Social Account
+					</a>
+				</div>
+			</div><!-- /. grid column -->
+			<div class="col-sm-9 profile_right">
+				<div class="border p-4 h-100">
+					<form method="post">	
+						<div class="pb-5">
+							<h3>General Information
+								<span class="pull-right fx-top">
+									<a href="#" class="btn btn-danger">
+										<i class="fa fa-upload mr-2" aria-hidden="true"></i> Upload Your Documents
+									</a>
+								</span>
+							</h3>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6">
+								<input type="text" name="name" id="name" class="form-control" placeholder="Name" value="" required>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="tagline" id="tagLine" class="form-control" placeholder="Company Tagline" value="" required>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6">
+								<select class="form-control" name="category" id="category">
+									<option>Category</option>
+								</select>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="ownername" id="qwnerNmae" class="form-control" placeholder="Owner Name" value="" required>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6 dropdown-container">
+								<select name="location" id="location" class="form-control">
+									<option value="location">Loaction</option>
+									<option value="newyork">New York</option>
+									<option value="losangeles">Los Angeles</option>
+									<option value="shicago">Shicago</option>
+									<option value="uniteskingdom">United Kingdom</option>
+								</select>
+							</div>
+							<div class="col-sm-6">
+								<div class="fileUpload">
+									<label class="upload form-control">
+										Company Logo
+										<input name="Image" id="uploadFile" type="file"/>
+										<span class="chooseFile">Choose File</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6 dropdown-container">
+								<select name="established" id="established" class="form-control">
+									<option value="age">Established</option>
+								</select>
+							</div>	
+							<div class="col-sm-6">
+								<input type="number" name="mobile" id="mobileNo" class="form-control" placeholder="Mobile Number" value="" required>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6">
+								<input type="text" name="landline" id="land-line" class="form-control" placeholder="Land Line" value="" required>
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="email" id="e_mail" class="form-control" placeholder="E-mail Address" value="" required>
+							</div>
+						</div>
+						<div class="form-group mt-5">
+							<input type="submit" name="save" class="btn btn-danger btn-block rounded-0" id="save" value="Save & Next" />
+						</div>
+					</form>
+					<!-- /. Protfolio -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

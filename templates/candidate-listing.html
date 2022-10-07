@@ -1,0 +1,330 @@
+{% extends "base1.html" %} 
+{% block content %}
+<section class="nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-5 nearcol">
+				<h1>Your dream Job</h1>
+				<h2 class="text-red">Is Near to You</h2>
+			</div>
+			<div class="col-sm-7 d-none d-md-block">
+				<div class="row">
+					<div class="d-flex w-100">
+						<img class="w-100" src="images/post-job/banner.png" alt="Banner" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+<section class="candidateList">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Candidate <span class="text-red">Listing</span></h3>
+				<div class="row">
+					<div class="col-sm-3 pr-0 dropdown-container">
+						<select name="education" id="education" class="form-control">
+							<option value="education">Education</option>
+						</select>
+					</div>
+					<div class="col-sm-3 pr-0 dropdown-container">
+						<select name="year" id="year" class="form-control">
+							<option value="year">Year</option>
+							<option value="1year">1 Year</option>
+							<option value="2year">2 Year</option>
+							<option value="4year">4 Year</option>
+							<option value="7year">7 Year</option>
+							<option value="10year">10 Year</option>
+						</select>
+					</div>
+					<div class="col-sm-3 pr-0 dropdown-container">
+						<select name="location" id="location" class="form-control">
+							<option value="location">Loaction</option>
+							<option value="newyork">New York</option>
+							<option value="losangeles">Los Angeles</option>
+							<option value="shicago">Shicago</option>
+							<option value="uniteskingdom">United Kingdom</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<input type="submit" name="inputsearch" id="input-search" class="btn btn-danger btn-block form-control" value="Search">
+					</div>
+				</div><!-- /. row -->
+				<div class="listCandidates">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="media">
+								<div class="jobImage w-auto">
+									<div class="image-card">
+										<img src="images/candidate-listing/candidate1.png" alt="Candidate-1" />
+									</div>
+								</div>
+								<div class="media-body">
+									<h5>Anna Deo</h5>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<i class="fa fa-phone mr-2" aria-hidden="true"></i>
+											<span class="f_rubik">9865235893</span>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											San Francisco
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+											Full Time
+										</li>
+									</ul>
+									<ul class="list-inline editText mb-0">
+										<li class="list-inline-item">Java Script</li>
+										<li class="list-inline-item">PHP</li>
+										<li class="list-inline-item">CSS</li>
+										<li class="list-inline-item">C++</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-right listRight">
+							<h5 class="f_rubik">$5000-1000 <br><span>(Monthly)</span></h5>
+							<a href="candidate-details.html" class="btn btn-outline-dark rounded-pill">
+								View Details
+							</a>
+						</div>
+					</div><!-- /. row -->
+				</div><!-- /. listCandidates -->
+				<div class="listCandidates">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="media">
+								<div class="jobImage w-auto">
+									<div class="image-card">
+										<img src="images/candidate-listing/candidate2.png" alt="Candidate-2" />
+									</div>
+								</div>
+								<div class="media-body">
+									<h5>Stephen Henry</h5>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<i class="fa fa-phone mr-2" aria-hidden="true"></i>
+											<span class="f_rubik">9865235893</span>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											San Francisco
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+											Full Time
+										</li>
+									</ul>
+									<ul class="list-inline editText mb-0">
+										<li class="list-inline-item">Java Script</li>
+										<li class="list-inline-item">PHP</li>
+										<li class="list-inline-item">CSS</li>
+										<li class="list-inline-item">C++</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-right listRight">
+							<h5 class="f_rubik">$8000-1000 <br><span>(Monthly)</span></h5>
+							<a href="candidate-details.html" class="btn btn-outline-dark rounded-pill">
+								View Details
+							</a>
+						</div>
+					</div><!-- /. row -->
+				</div><!-- /. listCandidates -->
+				<div class="listCandidates">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="media">
+								<div class="jobImage w-auto">
+									<div class="image-card">
+										<img src="images/candidate-listing/candidate3.png" alt="Candidate-3" />
+									</div>
+								</div>
+								<div class="media-body">
+									<h5>Mark Frendi</h5>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<i class="fa fa-phone mr-2" aria-hidden="true"></i>
+											<span class="f_rubik">9865235893</span>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											San Francisco
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+											Full Time
+										</li>
+									</ul>
+									<ul class="list-inline editText mb-0">
+										<li class="list-inline-item">Java Script</li>
+										<li class="list-inline-item">PHP</li>
+										<li class="list-inline-item">CSS</li>
+										<li class="list-inline-item">C++</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-right listRight">
+							<h5 class="f_rubik">$5000-1000 <br><span>(Monthly)</span></h5>
+							<a href="candidate-details.html" class="btn btn-outline-dark rounded-pill">
+								View Details
+							</a>
+						</div>
+					</div><!-- /. row -->
+				</div><!-- /. listCandidates -->
+				<div class="listCandidates">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="media">
+								<div class="jobImage w-auto">
+									<div class="image-card">
+										<img src="images/candidate-listing/candidate4.png" alt="Candidate-4" />
+									</div>
+								</div>
+								<div class="media-body">
+									<h5>Ken Hery</h5>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<i class="fa fa-phone mr-2" aria-hidden="true"></i>
+											<span class="f_rubik">9865235893</span>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											San Francisco
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+											Full Time
+										</li>
+									</ul>
+									<ul class="list-inline editText mb-0">
+										<li class="list-inline-item">Java Script</li>
+										<li class="list-inline-item">PHP</li>
+										<li class="list-inline-item">CSS</li>
+										<li class="list-inline-item">C++</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-right listRight">
+							<h5 class="f_rubik">$5000-1000 <br><span>(Monthly)</span></h5>
+							<a href="candidate-details.html" class="btn btn-outline-dark rounded-pill">
+								View Details
+							</a>
+						</div>
+					</div><!-- /. row -->
+				</div><!-- /. listCandidates -->
+				<div class="listCandidates">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="media">
+								<div class="jobImage w-auto">
+									<div class="image-card">
+										<img src="images/candidate-listing/candidate5.png" alt="Candidate-5" />
+									</div>
+								</div>
+								<div class="media-body">
+									<h5>Anna Deo</h5>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<i class="fa fa-phone mr-2" aria-hidden="true"></i>
+											<span class="f_rubik">9865235893</span>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											San Francisco
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+											Full Time
+										</li>
+									</ul>
+									<ul class="list-inline editText mb-0">
+										<li class="list-inline-item">Java Script</li>
+										<li class="list-inline-item">PHP</li>
+										<li class="list-inline-item">CSS</li>
+										<li class="list-inline-item">C++</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-right listRight">
+							<h5 class="f_rubik">$5000-1000 <br><span>(Monthly)</span></h5>
+							<a href="candidate-details.html" class="btn btn-outline-dark rounded-pill">
+								View Details
+							</a>
+						</div>
+					</div><!-- /. row -->
+				</div><!-- /. listCandidates -->
+				<div class="listCandidates">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="media">
+								<div class="jobImage w-auto">
+									<div class="image-card">
+										<img src="images/candidate-listing/candidate6.png" alt="Candidate-6" />
+									</div>
+								</div>
+								<div class="media-body">
+									<h5>Anna Deo</h5>
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<i class="fa fa-phone mr-2" aria-hidden="true"></i>
+											<span class="f_rubik">9865235893</span>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											San Francisco
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+											Full Time
+										</li>
+									</ul>
+									<ul class="list-inline editText mb-0">
+										<li class="list-inline-item">Java Script</li>
+										<li class="list-inline-item">PHP</li>
+										<li class="list-inline-item">CSS</li>
+										<li class="list-inline-item">C++</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 text-right listRight">
+							<h5 class="f_rubik">$5000-1000 <br><span>(Monthly)</span></h5>
+							<a href="candidate-details.html" class="btn btn-outline-dark rounded-pill">
+								View Details
+							</a>	
+						</div>
+					</div><!-- /. row -->
+				</div><!-- /. listCandidates -->
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="pull-left">
+						  <ul class="pagination f_rubik mb-0">
+							<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						  </ul>
+						</nav>
+						<p class="showing">Showing 6 out of 30</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. candidateList -->
+
+{% endblock %}

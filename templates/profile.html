@@ -1,0 +1,258 @@
+{% extends "base1.html" %} 
+{% block content %}
+
+<section class="profile_banner">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 nearJob">
+				<h1>Your dream Job</h1>
+				<h2 class="text-red">Is Near to You</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. profile_banner -->
+
+<section class="profileMain">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 pr-lg-5">
+				<div class="card mb-2 border-0">
+					<div class="jobImage">
+						<div class="image-card">
+							<img class="card-img-top" src="images/profile/profile.png" alt="Profile">
+						</div>
+					</div>
+					<div class="card-body rgba-blue">
+						<p class="mb-0 text-white">Change Photo</p>
+					</div>
+				</div>
+				
+				<div class="proLinks">
+					<a href="home.html" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-cloud mr-2" aria-hidden="true"></i> Dashboard
+					</a> 
+					<a href="profile.html" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-user-o mr-2" aria-hidden="true"></i> Profile
+					</a>
+					<a href="register.html" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-key mr-2" aria-hidden="true"></i> Change Password
+					</a>
+					<a href="forgot-password.html" class="btn btn-outline-danger btn-block">
+						<i class="fa fa-sign-out mr-2" aria-hidden="true"></i> Logout
+					</a>
+				</div>
+			</div><!-- /. grid column -->
+			<div class="col-sm-9 profile_right">
+				<div class="border p-4">
+					<form method="post">	
+						<div class="pb-5">
+							<h3>Personal Information
+								<span class="pull-right fx-top">
+									<a href="#" class="btn btn-danger">
+										<i class="fa fa-upload mr-2" aria-hidden="true"></i> Upload Your CV
+									</a>
+									<a href="#" class="btn btn-danger">
+										<i class="fa fa-edit mr-2" aria-hidden="true"></i> Edit
+									</a>
+								</span>
+							</h3>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6">
+								<input type="text" name="firstname" id="firstName" class="form-control" placeholder="Frist Name" value="" required>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="lastname" id="lastName" class="form-control" placeholder="Last Name" value="" required>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6">
+								<input type="date" name="date" id="dob" class="form-control" value="" required>
+							</div>
+							<div class="col-sm-6">
+								<input type="number" name="number" id="number" class="form-control" placeholder="+61589632563" value="" required>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-6">
+								<input type="text" name="address" id="address" class="form-control" placeholder="Address" value="" required>
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="designation" id="Designation" class="form-control" placeholder="Designation" value="" required>
+							</div>
+						</div>
+						<div class="form-group row">	
+							<div class="col-sm-3 dropdown-container">
+								<select name="age" id="age" class="form-control">
+									<option value="age">Age</option>
+									<option value="20">20</option>
+									<option value="45">45</option>
+									<option value="18">18</option>
+									<option value="30">30</option>
+								</select>
+							</div>
+							<div class="col-sm-3 dropdown-container">
+								<select name="gender" id="gender" class="form-control">
+									<option value="gender">Gender</option>
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+							<div class="col-sm-3 dropdown-container">
+								<select name="cur_salary" id="c_salary" class="form-control">
+									<option value="current salary">Current Salary</option>
+								</select>
+							</div>
+							<div class="col-sm-3 dropdown-container">
+								<select name="expectation" id="expectation" class="form-control">
+									<option value="expectation">Expectation</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">	
+							<textarea class="form-control" name="aboutme" rows="10" placeholder="About Me" required></textarea>
+						</div>
+					
+						<!-- /. Personal Information -->
+						<h3 class="pt-5">Skills
+							<span class="pull-right">
+								<a href="#" class="btn btn-danger">
+									<i class="fa fa-edit mr-2" aria-hidden="true"></i> Edit
+								</a>
+							</span>
+						</h3>
+						
+						<div class="py-5">
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<input type="text" name="username" id="userName" class="form-control" placeholder="Name" value="" required>
+									<h6 class="text-red pt-2">Add Skill</h6>
+								</div>
+								<div class="col-sm-6">
+									<input type="text" name="skill" id="skill" class="form-control" placeholder="Skill Percentage" value="" required>
+								</div>
+							</div>
+						</div>
+						<!-- /. Skills -->
+						
+						<h3>Education
+							<span class="pull-right">
+								<a href="#" class="btn btn-danger">
+									<i class="fa fa-edit mr-2" aria-hidden="true"></i> Edit
+								</a>
+							</span>
+						</h3>
+						
+						<div class="py-5">
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<input type="text" name="title" id="title" class="form-control" placeholder="Tittle" value="" required>								
+								</div>
+								<div class="col-sm-6">
+									<input type="text" name="degree" id="degree" class="form-control" placeholder="Degree" value="" required>							
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<input type="text" name="institute" id="institute" class="form-control" placeholder="Institute" value="" required>							
+									<h6 class="text-red pt-2">Add Education</h6>
+								</div>
+								<div class="col-sm-6">
+									<input type="date" name="year" id="year" class="form-control" value="" required>					
+								</div>
+							</div>
+						</div>
+						<!-- /. Education -->
+						
+						<h3>Experince
+							<span class="pull-right">
+								<a href="#" class="btn btn-danger">
+									<i class="fa fa-edit mr-2" aria-hidden="true"></i> Edit
+								</a>
+							</span>
+						</h3>
+						
+						<div class="py-5">
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<input type="text" name="company" id="company" class="form-control" placeholder="Company" value="" required>				
+								</div>
+								<div class="col-sm-6">
+									<input type="text" name="designation" id="designation" class="form-control" placeholder="Designation" value="" required>						
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-3 dropdown-container">
+									<select name="job_form" id="j_form" class="form-control">
+										<option value="job form">Job Form</option>
+									</select>
+								</div>
+								<div class="col-sm-3 dropdown-container">
+									<select name="end_on" id="endOn" class="form-control">
+										<option value="end on">End On</option>
+									</select>
+								</div>
+								<div class="col-sm-6 dropdown-container">
+									<select name="location" id="location" class="form-control">
+										<option value="location">Loaction</option>
+										<option value="newyork">New York</option>
+										<option value="losangeles">Los Angeles</option>
+										<option value="shicago">Shicago</option>
+										<option value="uniteskingdom">United Kingdom</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="10" name="aboutcompany" placeholder="About Company" required></textarea>
+								<h6 class="text-red pt-2">Add Experince</h6>
+							</div>
+						</div>
+						<!-- /. Experince -->
+					
+						<h3>Protfolio
+							<span class="pull-right">
+								<a href="#" class="btn btn-danger">
+									<i class="fa fa-edit mr-2" aria-hidden="true"></i> Edit
+								</a>
+							</span>
+						</h3>
+						
+						<div class="pt-5 pb-3">
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" name="projectname" id="projectName" class="form-control" placeholder="Project Name" value="" required>
+									</div>
+									<div class="form-group row">
+										<div class="col-sm-6 dropdown-container">
+											<select name="start_form" id="startForm" class="form-control">
+												<option class="start form">Start Form</option>
+											</select>
+										</div>
+										<div class="col-sm-6 dropdown-container">
+											<select name="end_on" id="end-on" class="form-control">
+												<option class="end on">End On</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<textarea class="form-control" name="project_d" rows="4" placeholder="Project Description" required></textarea>
+								</div>
+							</div>
+							<div class="form-group pb-5">
+								<input type="file" name="file" id="inputFile" class="form-control" required>
+								<h6 class="text-red pt-2">Add Other</h6>
+							</div>
+							<input type="submit" name="submit" class="btn btn-danger btn-block rounded-0" id="update" value="Update & Save" />
+						</div>
+					</form>
+					<!-- /. Protfolio -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

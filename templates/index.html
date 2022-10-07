@@ -1,0 +1,516 @@
+{% extends "base1.html" %} 
+{% block content %}
+{% for i in data %}
+<section class="homePage">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				
+				<h1>{{i.heading_title1}}</h1>
+				<h2 class="text-red">{{i.heading_title2 | safe}}</h2>
+				<p>{{i.heading_description|safe}}</p>
+				
+				<form class="form-inline" method="post">
+					<div class="input-group mb-4 w-100">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<input type="search" name="search" id="search" class="form-control" placeholder="Search by Skill,job and Company" value="" required>
+						<input type="submit" name="searchbtn" class="btn btn-dark rounded-pill" id="searchBtn" value="Search">
+					</div><!-- input-group -->
+				</form>
+			</div>
+		</div><!-- row -->
+		<div class="row"> 
+			<div class="col-sm-8">
+				<div class="socialImage">
+					<img class="ml-0" src="images/home/Google-logo.png" alt="Google" title="Google" />
+					<img src="images/home/Microsoft-Logo-PNG.png" alt="Microsoft" title="Microsoft" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- homePage -->
+</div>
+<!-- banner end here -->
+
+<section class="jobPart">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="jobImage">
+					<div class="image-card">
+						<img class="w-100" src="images/home/women.png" alt="Job"/>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 pt-md-4 pt-sm-0">
+				<h1>{{i.mid_title1}}</h1>
+				<h2 class="text-red">{{i.mid_title2}}</h2>
+				<p class="py-3">{{i.mid_description|safe}}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- jobPart end here -->
+
+<section class="ourJob">
+	<div class="container-fluid">
+		<h1>Our Job <span class="text-red">Process</span></h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="ourjobInner mb-4">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<h3 class="text-red"> Create Account</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmo<br> tempor incididunt</p>
+					<a href="#" class="btn btn-danger read rounded-pill"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="ourjobInner mb-4">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<h3 class="text-red"> Search Job</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmo<br> tempor incididunt</p>
+					<a href="#" class="btn btn-danger read rounded-pill"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="ourjobInner mb-4">
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					<h3 class="text-red"> Upload Resume</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmo<br> tempor incididunt</p>
+					<a href="#" class="btn btn-danger read rounded-pill"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ourJob end here -->
+
+<section class="jobforYou">
+	<div class="container-fluid">
+		<!-- carousel wrapper -->
+		<div id="jobSlider" class="carousel slide carousel-multi-item" data-ride="carousel">
+			<!-- controls -->
+			<div class="controls-top">
+				<h1><a class="btn-floating pre" href="#jobSlider" data-slide="prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a> 
+				{{i.scroll_title1}} <span class="text-red">{{i.scroll_title2}}</span>
+				<a class="btn-floating next" href="#jobSlider" data-slide="next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				</h1>
+			</div>
+			<!-- controls -->
+
+			<!-- slides -->
+			<div class="carousel-inner" role="listbox">
+				<!-- first slide -->
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>Graphic Desginer</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>Graphic Desginer</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 clearfix d-none d-md-block">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>Data Entry</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>Data Entry</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 clearfix d-none d-md-block">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>High tech Pvt. Ltd.</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>High tech Pvt. Ltd.</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-3 clearfix d-none d-md-block">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>Account Manager</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>Account Manager</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- first slide -->
+
+				<!-- second slide -->
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>Graphic Desginer</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>Graphic Desginer</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 clearfix d-none d-md-block">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>Data Entry</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>Data Entry</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 clearfix d-none d-md-block">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>High tech Pvt. Ltd.</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>High tech Pvt. Ltd.</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-3 clearfix d-none d-md-block">
+							<div class="jobBox">
+								<img class="w-100" src="images/home/job-for-you.png" alt="Job">
+								<div class="jobBox-content">
+									<h3>Account Manager</h3>
+									<button type="button" class="btn btn-outline-warning">Apply Now</button>
+								</div>
+								<div class="jobBox-hover">
+									<div class="card">
+										<img class="card-img-top" src="images/home/job-hover.png" alt="Job">
+										<div class="jobBox-hover-content">
+											<i class="fa fa-cube" aria-hidden="true"></i>
+											<h3>Account Manager</h3>	
+										</div>
+										<div class="card-body">
+											<h4>Graphic Desginer</h4>
+											<ul class="list-unstyled mb-0">
+												<li>Building No.-563, klinton Pair, <br> St, 1.New York, USA.</li>
+												<li>Mob:- 9876543210</li>
+												<li>Status:- Active</li>
+											</ul>
+										</div>
+										<a href="job-details.html">Apply Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- jobforYou -->
+
+<section class="weCompany">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8 pt-md-5 pt-sm-0">
+				<h1>{{i.end_title1}}</h1>
+				<h2 class="text-red">{{i.end_title2}}</h2>
+				<p class="more">
+					{{i.end_description|safe}}
+				</p>
+			</div>
+			<div class="col-sm-4 text-center">
+				<div class="d-flex w-100 pb-4">
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand9.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand10.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand11.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand12.png" class="img-fluid" alt="Logo"></a>
+					</div>
+				</div>
+				<div class="d-flex w-100 pb-4">
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand1.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand2.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand3.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand4.png" class="img-fluid" alt="Logo"></a>
+					</div>
+				</div>
+					
+				<div class="d-flex w-100 pb-4">
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand5.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand6.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand7.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand8.png" class="img-fluid" alt="Logo"></a>
+					</div>
+				</div>
+					
+				<div class="d-flex w-100 pb-4">
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand9.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand10.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand11.png" class="img-fluid" alt="Logo"></a>
+					</div>
+					<div class="w-25">
+						<a href="#"><img src="images/home/brand12.png" class="img-fluid" alt="Logo"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- weCompany end here -->
+
+<section class="seekerPart d-none d-md-block">
+	<div class="container text-center">
+		<h1>{{i.about_us1}} <span class="text-red">{{i.about_us2}}</span></h1> 
+		<h3 class="mx-auto col-sm-8">{{i.aboutus_description|safe}}</h3>
+	</div>
+	{% endfor %}
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="bgseeker">
+					<img class="w-100" src="images/home/Testimonial-Background.png" alt="Background" />
+				</div>
+				<div class="pro_one">
+					<a href="#" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus. "><img src="images/home/testimonial-images.png" alt="profile" /></a>
+				</div>
+				<div class="pro_two">
+					<a href="#" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus. "><img src="images/home/testimonial-image2.png" alt="profile" /></a>
+				</div>
+				<div class="pro_three">
+					<a href="#" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus. "><img src="images/home/Testimonial-Images6.png" alt="profile" /></a>
+				</div>
+				<div class="pro_four">
+					<a href="#" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus. "><img src="images/home/testimonial-image3.png" alt="profile" /></a>
+				</div>
+				<div class="pro_five">
+					<a href="#" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus. "><img src="images/home/Testimonial4.png" alt="profile" /></a>
+				</div>
+				<div class="pro_six">
+					<a href="#" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus. "><img src="images/home/Testimonial-Image5.png" alt="profile" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- seekerPart end here -->
+
+<section class="latestBlog">
+	<div class="container-fluid">
+		<h1 class="text-center">{{i.footer_title1}}<span class="text-red">{{i.footer_title2}}</span></h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/home/blog-1.png" alt="Job">
+					<span class="dateTop">20<sup>th</sup> feb 2020</span>
+					<div class="card-body">
+						<h3 class="card-title">New Generation</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+						<a class="readlink" href="blog-detail.html">Read More</a>
+						<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/home/blog-3.png" alt="Job">
+					<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+					<div class="card-body">
+						<h3 class="card-title">Most Important</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+						<a class="readlink" href="blog-detail.html">Read More</a>
+						<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/home/blog-2.png" alt="Job">
+					<span class="dateTop">5<sup>th</sup> Oct 2020</span>
+					<div class="card-body">
+						<h3 class="card-title">New days Insipiration</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+						<a class="readlink" href="blog-detail.html">Read More</a>
+						<a href="blog-detail.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- latestBlog end here -->
+
+
+<!-- intro -->
+<div class="intro">
+	<div class="way-success"></div>
+	<div class="caption">
+		<div class="way-inner">
+			<h3>WAY TO SUCCESS</h3>
+		</div>
+	</div>
+	<span class="overlay">
+		<svg viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
+		<path fill="#282b4a" d="M 250 180.5 c -53.85 0 -135.344 -30.044 -250 -165.633 V 262 h 500 V 15.867 C 405.344 180.456 280.85 180.5 250 180.5 Z"/>
+		</svg>
+	</span>
+</div>
+
+{% endblock %}

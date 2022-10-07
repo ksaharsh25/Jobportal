@@ -1,0 +1,108 @@
+{% extends "base1.html" %} 
+{% block content %}
+
+<section class="nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-5 nearcol">
+				<h1>Your dream Job</h1>
+				<h2 class="text-red">Is Near to You</h2>
+			</div>
+			<div class="col-sm-7 d-none d-md-block">
+				<div class="row">
+					<div class="d-flex w-100">
+						<img class="w-100" src="images/post-job/banner.png" alt="Banner">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+<section class="stillGot">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-sm-12 mx-auto">
+				<h2>Post Your <span class="text-red"> Job</span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<form method="post">
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<input type="text" name="name" id="name" class="form-control" placeholder="Name" value="" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 form-group dropdown-container">
+							<select name="job_category" id="job_cate" class="form-control">
+								<option value="category">Job Category</option>
+							</select>
+						</div>
+						<div class="col-sm-6 form-group dropdown-container">
+							<select name="location" id="location" class="form-control">
+								<option value="location">Loaction</option>
+								<option value="newyork">New York</option>
+								<option value="losangeles">Los Angeles</option>
+								<option value="shicago">Shicago</option>
+								<option value="uniteskingdom">United Kingdom</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input type="text" name="companyname" id="companyName" class="form-control" placeholder="Company Name" value="" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input type="text" name="monthlysalary" id="monthlySalary" class="form-control" placeholder="Monthly Salary" value="" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input type="text" name="vacancies" id="vacancies" class="form-control" placeholder="Vacancies" value="" required>
+						</div>
+						<div class="col-sm-6 form-group dropdown-container">
+							<select name="job_type" id="jobType" class="form-control">
+								<option value="jobtype">Job Type</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3 form-group dropdown-container">
+							<select name="experince" id="experince" class="form-control">
+								<option value="experince">Experince</option>
+							</select>
+						</div>
+						<div class="col-sm-3 form-group dropdown-container">
+							<select name="gender" id="gender" class="form-control">
+								<option value="gender">Gender</option>
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="col-sm-6 form-group dropdown-container">
+							<select name="nationality" id="nationality" class="form-control">
+								<option value="nationality">Nationality</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<textarea class="form-control" name="discription" rows="12" placeholder="Job Descriptions" required></textarea>
+						</div>
+					</div>
+					<div class="row pt-4">
+						<div class="col-sm-12 form-group">
+							<button type="submit" name="submit" class="btn btn-danger btn-block" id="post">Post Your Job </button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

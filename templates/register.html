@@ -1,0 +1,92 @@
+{% extends "base1.html" %} 
+{% block content %}
+
+<section class="nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-5 nearcol">
+				<h1>Your dream Job</h1>
+				<h2 class="text-red">Is Near to You</h2>
+			</div>
+			<div class="col-sm-7 d-none d-md-block">
+				<div class="row">
+					<div class="d-flex w-100">
+						<img class="w-100" src="images/contact-us/banner.png" alt="Banner" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+<section class="loginForm">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 mx-auto">	
+				<form method="post">
+					<h3 class="text-center">REGISTRATION</h3>
+					
+					<div class="latestForm">
+						<!-- firstname input -->
+						<div class="form-group"> 
+							<input type="text" name="firstname" id="firstName" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="firstName">First Name</label>
+							<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+						</div>
+						<!-- last input -->
+						<div class="form-group"> 
+							<input type="text" name="lastname" id="lastName" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="lastName">Last Name</label>
+							<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+						</div>
+						<!-- email input -->
+						<div class="form-group"> 
+							<input type="email" name="email" id="email" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="email">E-mail Address</label>
+							<i class="fa fa-envelope-o iconSet" aria-hidden="true"></i>
+						</div>
+						<!-- user input -->
+						<div class="form-group"> 
+							<input type="text" name="username" id="userName" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="userName">Username</label>
+							<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+						</div>
+						<!-- password input -->
+						<div class="form-group"> 
+							<input type="password" name="password" id="password" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="password">Password</label> 
+							<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+						</div> 
+						<!-- password input -->
+						<div class="form-group"> 
+							<input type="password" name="conpassword" id="conpwd" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="conpwd">Confirm Password</label> 
+							<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+						</div> 
+					</div> 
+					<!-- /. latestForm -->
+					<!-- Submit button -->
+					<input type="submit" name="submit" class="btn btn-danger btn-block mb-4" id="register" value="Register Now">
+
+					<!-- Register buttons -->
+					<div class="text-center"> 
+						<p>Have't Any Account Yet? <a class="clickHere" href="login.html">Click Here</a></p>
+						<p>or</p>
+						<p>Login With Social</p>
+						<a href="#" class="btn btn-danger btn-floating rounded-pill mx-2">
+						  <i class="fa fa-google mr-1"></i> Google
+						</a>
+						<a href="#" class="btn btn-primary rounded-pill btn-floating mx-2">
+						  <i class="fa fa-facebook mr-1"></i> Facebook
+						</a>
+						<a href="#" class="btn btn-info rounded-pill btn-floating mx-2">
+						  <i class="fa fa-twitter mr-1"></i> Twitter
+						</a>
+					</div>
+				</form>			
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,293 @@
+{% extends "base1.html" %} 
+{% block content %}
+{%for i in cat%}
+<section class="nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-5 nearcol">
+				<h1>{{i.heading_title1}}</h1>
+				<h2 class="text-red">{{i.heading_title2}}</h2>
+			</div>
+			<div class="col-sm-7 d-none d-md-block">
+				<div class="row">
+					<div class="d-flex w-100">
+						<img class="w-100" src="images/categories/banner.png" alt="Banner" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+<nav class="topbreadcrumb">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="home.html">Home</a></li>
+					<li class="breadcrumb-item"><a href="categories.html">Categories</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- /. topbreadcrumb -->
+
+<section class="explore">
+	<div class="container-fluid">
+		<h3 class="text-center">{{i.mid_title1}} <span class="text-red"> {{i.mid_title2}}</span></h3>
+		<div class="row pb-5">
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-bar-chart" aria-hidden="true"></i>
+						<h4>Web & Software</h4>
+						<p>122 Jobs</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-file-text-o" aria-hidden="true"></i>
+						<h4>Data Science & Analist</h4>
+						<p>62 Jobs</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-briefcase" aria-hidden="true"></i>
+						<h4>Business Development</h4>
+						<p>122 Jobs</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-globe" aria-hidden="true"></i>
+						<h4>Digital Marketing</h4>
+						<p>25 Jobs</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="row pb-4">
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+						<h4>Restaurant</h4>
+						<p>63 Jobs</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-linode" aria-hidden="true"></i>
+						<h4>Graphic Designing</h4>
+						<p>62 Jobs</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-car" aria-hidden="true"></i>
+						<h4>Car Driving</h4>
+						<p>122 Jobs</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 mb-4">
+				<a href="job-listing.html">
+					<div class="exoInner">
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+						<h4>Mechanic Engineering</h4>
+						<p>45 Jobs</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<a href="#" class="btn btn-danger">View All Categroies</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. explore -->
+
+<section class="proFile">
+	<div class="container my-4">	
+		<h3 class="text-center pb-5">{{i.end_title1}} <span class="text-red">{{i.end_title2}}</span></h3>
+		<!-- Carousel Wrapper -->
+		<div id="slideProfile" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+			<!-- Controls -->
+			<div class="controls-top">
+				<a class="btn-floating prev" href="#slideProfile" data-slide="prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+				<a class="btn-floating next" href="#slideProfile" data-slide="next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</div>
+			<!-- /.Controls -->
+
+			<!-- Slides -->
+			<div class="carousel-inner" role="listbox">
+
+				<!-- First slide -->
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="job-details.html">
+								<div class="card mb-2">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="card-img-top" src="images/categories/sl-1.png" alt="Profile">
+										</div>
+									</div>
+									<div class="card-body rgba-blue">
+										<h4 class="text-white">Web Desiger</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4 clearfix d-none d-md-block">
+							<a href="job-details.html">
+								<div class="card mb-2">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="card-img-top" src="images/categories/sl-2.png" alt="Profile">
+										</div>
+									</div>
+									<div class="card-body rgba-blue">
+										<h4 class="text-white">UI/UX Designer</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4 clearfix d-none d-md-block">
+							<a href="job-details.html">
+								<div class="card mb-2">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="card-img-top" src="images/categories/sl-3.png" alt="Profile">
+										</div>
+									</div>
+									<div class="card-body rgba-blue">
+										<h4 class="text-white">Graphic Designer</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.First slide -->
+
+				<!-- Second slide -->
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="job-details.html">
+								<div class="card mb-2">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="card-img-top" src="images/categories/sl-1.png" alt="Profile">
+										</div>
+									</div>
+									<div class="card-body rgba-blue">
+										<h4 class="text-white">Web Desiger</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4 clearfix d-none d-md-block">
+							<a href="job-details.html">
+								<div class="card mb-2">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="card-img-top" src="images/categories/sl-2.png" alt="Profile">
+										</div>
+									</div>
+									<div class="card-body rgba-blue">
+										<h4 class="text-white">UI/UX Designer</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4 clearfix d-none d-md-block">
+							<a href="job-details.html">
+								<div class="card mb-2">
+									<div class="jobImage">
+										<div class="image-card">
+											<img class="card-img-top" src="images/categories/sl-3.png" alt="Profile">
+										</div>
+									</div>
+									<div class="card-body rgba-blue">
+										<h4 class="text-white">Graphic Designer</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.Second slide -->
+			</div>
+			<!-- /.Slides -->
+		</div>
+		<!-- /.Carousel Wrapper -->
+	</div>
+</section>
+
+<section class="latestBlog pt-0 pb-5">
+	<div class="container-fluid">
+		<h3 class="text-center pb-5">{{i.footer_title1}}<span class="text-red">{{i.footer_title2}}</span></h3>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/categories/blog-1.png" alt="Job">
+					<span class="dateTop">20<sup>th</sup> feb 2020</span>
+					<div class="card-body">
+						<h3 class="card-title">New Generation</h3>
+						<p class="smiBold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+						<a class="readlink" href="blog-detail.html">Read More</a>
+						<a href="blog-details.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/categories/blog-2.png" alt="Job">
+					<span class="dateTop">30<sup>th</sup> Jan 2020</span>
+					<div class="card-body">
+						<h3 class="card-title">Most Important</h3>
+						<p class="smiBold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+						<a class="readlink" href="blog-details.html">Read More</a>
+						<a href="blog-details.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/categories/blog-3.png" alt="Job">
+					<span class="dateTop">5<sup>th</sup> Oct 2020</span>
+					<div class="card-body">
+						<h3 class="card-title">New days Insipiration</h3>
+						<p class="smiBold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmodLorem ipsum dolor sir amet, consectetur adipiscing elit, sed do eiusmo</p>
+						<a class="readlink" href="blog-details.html">Read More</a>
+						<a href="blog-details.html" class="btn btn-outline-white rounded-pill"> <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- latestBlog end here -->
+{%endfor%}
+{% endblock %}
